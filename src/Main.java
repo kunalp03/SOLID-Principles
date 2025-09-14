@@ -1,3 +1,4 @@
+import LSP.LSPDemo;
 import OCP.OCPDemo;
 import SRP.*;
 
@@ -13,6 +14,11 @@ public class Main {
         OCPDemo ocp = new OCPDemo();
         ocp.runBadOCP();
         ocp.runGoodOCP();
+
+//      LISKOV SUBSTITUTION PRINCIPLE
+        LSPDemo lsp = new LSPDemo();
+        lsp.runBadLSP(); //Violates LSP
+        lsp.runGoodLSP();
 
     }
 }

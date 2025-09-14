@@ -1,3 +1,4 @@
+import ISP.ISPDemo;
 import LSP.LSPDemo;
 import OCP.OCPDemo;
 import SRP.*;
@@ -19,6 +20,11 @@ public class Main {
         LSPDemo lsp = new LSPDemo();
         lsp.runBadLSP(); //Violates LSP
         lsp.runGoodLSP();
+
+//      INTERFACE SEGREGATION PRINCIPLE
+        ISPDemo isp = new ISPDemo();
+        isp.runBadISP();
+        isp.runGoodISP();
 
     }
 }

@@ -1,3 +1,4 @@
+import DIP.DIPDemo;
 import ISP.ISPDemo;
 import LSP.LSPDemo;
 import OCP.OCPDemo;
@@ -26,5 +27,9 @@ public class Main {
         isp.runBadISP();
         isp.runGoodISP();
 
+//      DEPENDENCY INVERSION PRINCIPLE
+        DIPDemo dip = new DIPDemo();
+        dip.runBadDIP();
+        dip.runGoodDIP();
     }
 }
